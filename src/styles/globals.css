@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+    @apply bg-clip-text text-transparent bg-text-gradient;
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold; /* Adjust as needed */
+  }
