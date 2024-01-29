@@ -65,7 +65,7 @@ const RandomQuote: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col space-y-2">
+    <div className="sm:flex flex-col space-y-2 hidden">
       <label className="label swap swap-flip cursor-pointer items-start p-0">
         <input checked={toggleState} type="checkbox" onChange={toggleQuote} />
         <div className="glass swap-on m-0 flex w-96 flex-col space-y-2 rounded-lg bg-base-100 p-3 shadow-xl">

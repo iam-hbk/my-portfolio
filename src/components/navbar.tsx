@@ -1,15 +1,16 @@
 /* eslint-disable */
-
+"use client";
 import React from "react";
 
 import { FaGithub } from "react-icons/fa";
+
 import Link from "next/link";
 import ThemeController from "./theme_controller";
 type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className=" glass sticky top-5  z-50 m-5 flex  w-[90vw] flex-row items-center justify-end space-x-4 rounded-full border border-black px-10">
+    <nav className="hidden glass sticky top-5  z-50 m-5 sm:flex  w-[90vw] flex-row items-center justify-end space-x-4 rounded-full border border-black px-10">
       <Link href="#" className="link-hover link p-4 text-xl hover:text-primary">
         Heritier
       </Link>
