@@ -7,6 +7,8 @@ import Navbar from "@/components/navbar";
 import RandomQuote from "@/components/what_I_mean";
 import ScrollDownArrow from "@/components/arrow_down_more_about_me";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 export default function HomePage() {
   return (
@@ -14,7 +16,7 @@ export default function HomePage() {
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
 
       <div className="drawer-content">
-      <label
+        <label
           htmlFor="my-drawer"
           className="btn sm:hidden btn-ghost drawer-button m-2 sticky top-5 "
         >
@@ -70,14 +72,40 @@ export default function HomePage() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+        <ul className="menu p-4 w-80 min-h-full flex-col  bg-base-200 text-base-content">
           {/* Sidebar content here */}
-          <li>
-            <a>Sidebar Item 1</a>
-          </li>
-          <li>
-            <a>Sidebar Item 2</a>
-          </li>
+          <Link
+            href="#"
+            className="link-hover link p-4 text-xl hover:text-primary"
+          >
+            Heritier
+          </Link>
+          <Link
+            href="#"
+            className="link-hover link p-4 text-xl hover:text-primary"
+          >
+            Blog
+          </Link>
+          <Link
+            href="#"
+            className="link-hover link p-4 text-xl hover:text-primary"
+          >
+            Works
+          </Link>
+          <Link
+            href="#"
+            className="link-hover link p-4 text-xl hover:text-primary"
+          >
+            Contact
+          </Link>
+          <Link
+            href={"https://github.com/iam-hbk"}
+            target="_blank"
+            className="link-hover link p-4 text-xl hover:text-primary items-center flex-row"
+          >
+            <span>Github</span>
+            <FaGithub className="ml-2 mb-2 inline" />
+          </Link>
         </ul>
       </div>
     </div>
